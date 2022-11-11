@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="preProcessorToLower" class="preprocessor.PreProcessorToLowerImpl"/>
+    <bean id="preProcessorToUpper" class="preprocessor.PreProcessorToUpperImpl"/>
+    <bean id="renderErrLow" class="render.RendererErrImpl">
+        <constructor-arg ref="preProcessorToLower"/>
+    </bean>
+    <bean id="renderErrUp" class="render.RendererErrImpl">
+        <constructor-arg ref="preProcessorToUpper"/>
+    </bean>
+    <bean id="renderStdLow" class="render.RendererStandardImpl">
+        <constructor-arg ref="preProcessorToLower"/>
+    </bean>
+    <bean id="renderStdUp" class="render.RendererStandardImpl">
+        <constructor-arg ref="preProcessorToUpper"/>
+    </bean>
+    <bean id="printerWithDateErrLow" class="printer.PrinterWithDateTimeImpl">
+        <constructor-arg ref="renderErrLow"/>
+    </bean>
+    <bean id="printerWithDateErrUp" class="printer.PrinterWithDateTimeImpl">
+        <constructor-arg ref="renderErrUp"/>
+    </bean>
+    <bean id="printerWithPrefixErrLow" class="printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="renderErrLow"/>
+        <property name="prefix" value="Prefix "/>
+    </bean>
+    <bean id="printerWithPrefixErrUp" class="printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="renderErrUp"/>
+        <property name="prefix" value="Prefix "/>
+    </bean>
+    <bean id="printerWithDateStdLow" class="printer.PrinterWithDateTimeImpl">
+        <constructor-arg ref="renderStdLow"/>
+    </bean>
+    <bean id="printerWithDateStdUp" class="printer.PrinterWithDateTimeImpl">
+        <constructor-arg ref="renderStdUp"/>
+    </bean>
+    <bean id="printerWithPrefixStdLow" class="printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="renderStdLow"/>
+        <property name="prefix" value="Prefix "/>
+    </bean>
+    <bean id="printerWithPrefixStdUp" class="printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="renderStdUp"/>
+        <property name="prefix" value="Prefix "/>
+    </bean>
+
+
+</beans>
