@@ -69,10 +69,9 @@ An example of use of such classes shall be contained in Program file(creation, i
 - User identifier must be read-only since it is initialized only once (when the object is created) and cannot be modified later during the program execution.
 - Temporary logic for identifier initialization should be added to User class construc- tor:
 
-||public User(...) {|
-| :- | - |
-||this.id = UserIdsGenerator.getInstance().generateId();|
-|}||
+`public User(...) {
+this.id = UserIdsGenerator.getInstance().generateId();
+}`
 
 
 ## Exercise 02
