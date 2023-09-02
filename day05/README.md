@@ -58,20 +58,17 @@ It is important to meet the following requirement
 
 Let’s assume that Course entity has a one-to-many relationship with Lesson entity. Their object-oriented relation should then look as follows:
 
-|class Course {|
-| - |
-|private Long id;|
-|private List<Lesson> lessons;// there are numerous lessons in the course|
-|...|
-|}|
+    class Course {
+    private Long id;
+    private List<Lesson> lessons;// there are numerous lessons in the course
+    ...
+    }
 
-
-
-|class Lesson {|
-|private Long id;|
-|private Course course; // the lesson contains a course it is linked to|
-|...|
-|}|
+    class Lesson {
+    private Long id;
+    private Course course; // the lesson contains a course it is linked to
+    ...
+    }
 
 Additional requirements:
 
