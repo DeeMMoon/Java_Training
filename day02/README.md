@@ -1,7 +1,6 @@
 # Day 3
 
 ## IO, Files
-
 Summary: Today you will learn how to use input/output in Java and implement
 
 programs to manipulate a file system
@@ -86,11 +85,10 @@ Thus, similarity value for these vectors is:
 
 
 
-|Numerator A. B = (1 \* 3 + 1 \* 0 + 0 \* 1 + 2 \* 1 + 1 \* 0 + 0 \* 1) = 5|
-| - |
-|Denominator ||A|| \* || B|| = sqrt(1 \* 1 + 1 \* 1 + 0 \* 0 + 2 \* 2 + 1 \* 1 + 0 \* 0) \* sqrt(3 \* 3 + 0 \* 0 + 1 \* 1 + 1|
-|\* 1 + 0 \* 0 + 1 \* 1) = sqrt(7) \* sqrt(12) = 2.64 \* 3.46 = 9.1|
-|similarity = 5 / 9.1 = 0.54|
+`Numerator A. B = (1 \* 3 + 1 \* 0 + 0 \* 1 + 2 \* 1 + 1 \* 0 + 0 \* 1) = 5` \
+`Denominator ||A|| \* || B|| = sqrt(1 \* 1 + 1 \* 1 + 0 \* 0 + 2 \* 2 + 1 \* 1 + 0 \* 0) \* sqrt(3 \* 3 + 0 \* 0 + 1 \* 1 + 1 
+\* 1 + 0 \* 0 + 1 \* 1) = sqrt(7) \* sqrt(12) = 2.64 \* 3.46 = 9.1` \
+`similarity = 5 / 9.1 = 0.54`
 
 Your goal is to implement an application that accepts two files as an input (both files are passed as command-line arguments) and displays their similarity comparison outcome (cosine measure).
 
