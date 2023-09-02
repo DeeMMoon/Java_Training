@@ -19,7 +19,7 @@ Files to turn in : Program.java \
 Allowed functions : \
 Input/Output : System.out \
 Types : Primitive types \
-Operators : Standard operations of primitive types \
+Operators : Standard operations of primitive types
 
 Java is a strictly typed programming language. Fundamental data types (boolean, character, integer, floating point number) are represented in Java by eight primitive types: boolean, char, byte, short, int, long, float, double.
 
@@ -31,20 +31,13 @@ Example of the program operation for number 479598:
 
 `$ java Program 42`
 
-Exercise 01 : Really Prime Number
+## Exercise 01
 
-Exercise 01 Really![ref4]![ref5] Prime Number
-
-Turn-in directory : *ex*01*/*
-
-Files to turn in : Program.java
-
-Allowed functions :
-
-Input/Output : System.out, System.err, Scanner(System.in)
-
-Types : Primitive types,
-
+Turn-in directory : *ex*01*/* \
+Files to turn in : Program.java \
+Allowed functions : \
+Input/Output : System.out, System.err, Scanner(System.in) \
+Types : Primitive types \
 Operators : Standard operations of primitive types, conditions, loops
 
 According to B¨ohm-Jacopini theorem, any algorithm can be written using three statements: sequence, selection, and iteration.
@@ -54,8 +47,6 @@ According to B¨ohm-Jacopini theorem, any algorithm can be written using three s
 - For negative numbers, 0 and 1, display theIllegalArgument message and shut down the program with the -1 code.
 
 Example of program operation:
-
-
 
 |$ java Program|
 | - |
@@ -69,37 +60,18 @@ Example of program operation:
 |$ java Program|
 |-> 42|
 |false 1|
+|$ java Program|
+|-> -100|
+|IllegalArgument|
 
-7
+## Exercise 02
 
-Module 00 – Piscine Java Management structures and arrays![ref2]![ref3]
-
-$ java Program![](Aspose.Words.e8ae69c2-4618-4ecc-9c97-745457ae42f1.008.png)
-
--> -100
-
-IllegalArgument
-
-
-Chapter VI
-
-Exercise 02 : Endless Sequence (or not?)![ref2]
-
-Exercise 02![](Aspose.Words.e8ae69c2-4618-4ecc-9c97-745457ae42f1.009.png)![ref5]
-
-Endless Sequence (or not?)
-
-Turn-in directory : *ex*02*/*
-
-Files to turn in : Program.java
-
-Allowed functions :
-
-Input/Output : System.out, System.err, Scanner(System.in)
-
-Types : Primitive types,
-
-Operators : Standard operations of primitive types, conditions, loops
+Turn-in directory : *ex*02*/* \
+Files to turn in : Program.java \
+Allowed functions : \
+Input/Output : System.out, System.err, Scanner(System.in) \
+Types : Primitive types \
+Operators : Standard operations of primitive types, conditions, loops 
 
 Today, you are Google.
 
@@ -115,8 +87,6 @@ To keep it simple, let’s assume that this potentially infinite sequence of que
 
 Example of program operation:
 
-
-
 |$ java Program|
 | - |
 |-> 198131|
@@ -125,7 +95,6 @@ Example of program operation:
 |-> 42|
 |Count of coffee-request - 2|
 
-9
 Chapter VII
 
 Exercise 03 : A Little Bit of Statistics![ref2]
