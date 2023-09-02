@@ -128,14 +128,14 @@ The implemented code must be tested in Program.java class. Example of the progra
 
 `$ java Program`
 
-Enter a message ID \
--> 5 \
-Message : { \
-id=5, \
-author={id=7,login="user",password="user",createdRooms=null,rooms=null}, \
-room={id=8,name="room",creator=null,messages=null}, text="message", \
-dateTime=01/01/01 15:69 \
-}
+    Enter a message ID
+    -> 5
+    Message : { 
+    id=5,
+    author={id=7,login="user",password="user",createdRooms=null,rooms=null},
+    room={id=8,name="room",creator=null,messages=null}, text="message",
+    dateTime=01/01/01 15:69
+    }
 
 Exercise project structure:
 
