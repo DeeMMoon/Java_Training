@@ -108,17 +108,13 @@ Data Access Object (DAO, Repository) is a popular design pattern that allows to 
 
 Let’s assume that we have an interface called CoursesRepository which provides access to course lessons. This interface may look as follows:
 
-
-
-|public interface CoursesRepository {|
-| - |
-|Optional<Course> findById(Long id);|
-|void delete(Course course);|
-|void save(Course course);|
-|void update(Course course);|
-||
-|List<Course> findAll();|
-|}|
+    public interface CoursesRepository {
+    Optional<Course> findById(Long id);
+    void delete(Course course);
+    void save(Course course);
+    void update(Course course);
+    List<Course> findAll();
+    }
 
 You need to implement MessagesRepository with a SINGLE Optional<Message> findById(Long id) method and its MessagesRepositoryJdbcImpl implementation.
 
