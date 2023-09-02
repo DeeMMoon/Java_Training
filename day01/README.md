@@ -25,10 +25,10 @@ Below is a set of exercises you can do one by one to solve the task.
 
 ## Exercise 00 
 
-Turn-in directory : *ex*00*/*
-Files to turn in : User.java, Transaction.java, Program.java
-Allowed functions :
-User classes can be employed, along with:
+Turn-in directory : *ex*00*/* \
+Files to turn in : User.java, Transaction.java, Program.java \
+Allowed functions : \
+User classes can be employed, along with: \
 Types (+ all methods of these types) : Integer, String, UUID, enumerations
 
 Your first task is to develop basic domain models namely, User and Transaction classes. It is quite likely for different users to have the same name in the system. This problem should be solved by adding a special field for a user’s unique ID. This ID can be any integer number. Specific ID creation logic is described in the next exercise.
@@ -53,9 +53,9 @@ An example of use of such classes shall be contained in Program file(creation, i
 
 ## Exercise 01
 
-Turn-in directory : *ex*01*/*
-Files to turn in : UserIdsGenerator.java, User.java, Program.java
-Allowed functions : All permissions from the previous exercise can be used
+Turn-in directory : *ex*01*/* \
+Files to turn in : UserIdsGenerator.java, User.java, Program.java \
+Allowed functions : All permissions from the previous exercise can be used \
 
 Make sure that each user ID is unique. To do so, create UserIdsGenerator class. Behavior of the object of this class defines the functionality for generating user IDs. State-of-the-art database management systems support autoincrement principle where each new ID is the value of the previously generated ID +1.
 
@@ -63,30 +63,21 @@ So, UserIdsGenerator class contains the last generated ID as its state. UserIdsG
 
 An example of use of such classes shall be contained in Program file(creation, initialization, printing object content on a console).
 
-Notes:
+### Notes:
 
 - Make sure only one UserIdsGenerator object exists (see the Singleton pattern). It is required because existence of several objects of this class cannot guarantee that all user identifiers are unique.
 - User identifier must be read-only since it is initialized only once (when the object is created) and cannot be modified later during the program execution.
 - Temporary logic for identifier initialization should be added to User class construc- tor:
-
-
 
 ||public User(...) {|
 | :- | - |
 ||this.id = UserIdsGenerator.getInstance().generateId();|
 |}||
 
-8
-<a name="_page9_x72.00_y74.49"></a>Chapter VI
 
-Exercise 02 : List of Users![ref2]
+## Exercise 02
 
-Exercise 02![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.007.png)![ref4]
-
-List of Users
-
-Turn-in directory : *ex*02*/*
-
+Turn-in directory : *ex*02*/* \
 Files to turn in : UsersList.java, UsersArrayList.java, User.java,Program.java, etc. Allowed functions : All permissions from the previous exercise + throw can be used.
 
 Now we need to implement a functionality for storing users while the program runs.
@@ -114,25 +105,16 @@ In case of an attempt to retrieve a user with a non-existent ID, an unchecked Us
 
 An example of use of such classes shall be contained in Program file(creation, initialization, printing object content on a console).
 
-Note:
+### Note:
 
 Nested ArrayList<T> Java class has the same structure. By modeling behavior of this
 
 class on your own, you will learn how to use mechanisms of this standard library class.
 
-10
-<a name="_page10_x72.00_y74.49"></a>Chapter VII
+## Exercise 03
 
-Exercise 03 : List of transactions![ref2]
-
-Exercise 03![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.008.png)![ref4]
-
-List of transactions
-
-Turn-in directory : *ex*03*/*
-
-Files to turn in : TransactionsList.java, TransactionsLinkedList.java, User.java, Program.java, etc.
-
+Turn-in directory : *ex*03*/* \
+Files to turn in : TransactionsList.java, TransactionsLinkedList.java, User.java, Program.java, etc. \
 Allowed functions : All permissions from the previous exercise can be used
 
 Unlike users, a list of transactions requires a special implementation approach. Since the number of transaction creation operations can be very large, we need a storage method to avoid a costly array size extension.
@@ -151,25 +133,17 @@ If an attempt is made to remove a transaction with non-existent ID, TransactionN
 
 An example of use of such classes shall be contained in Program file (creation, initialization, printing object content on a console).
 
-Note:
+### Note:
 
 - We need to add transactions field of TransactionsList type to User class so that each user can store the list of their transactions.
 - A transaction must be added with a SINGLE operation (O(1))
 - LinkedList<T> nested Java class has the same structure, a bidirectional linked list.
 
-11
-<a name="_page11_x72.00_y74.49"></a>Chapter VIII
+## Exercise 04
 
-Exercise 04 : Business Logic![ref2]
-
-
-
-|![ref4]|Exercise 04|
-| - | - |
-|Business Logic||
-|Turn-in directory : *ex*04*/*||
-|Files to turn in : TransactionsService.java, Program.java, etc.||
-|Allowed functions : All permissions from the previous exercise can be used||
+Turn-in directory : *ex*04*/* \
+Files to turn in : TransactionsService.java, Program.java, etc. \
+Allowed functions : All permissions from the previous exercise can be used
 
 The business logic level of the application is located in service classes. Such classes contain basic algorithms of the system, automated processes, etc. These classes are usually designed based on the Facade pattern that can encapsulate behavior of several classes.
 
@@ -185,19 +159,10 @@ In case of an attempt to make a transfer of the amount exceeding user’s residu
 
 An example of use of such classes shall be contained in Program file(creation, initialization, printing object content on a console).
 
-12
-<a name="_page12_x72.00_y74.49"></a>Chapter IX
+## Exercise 05
 
-Exercise 05 : Menu![ref2]
-
-Exercise 05![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.009.png)![ref4]
-
-Menu
-
-Turn-in directory : *ex*05*/*
-
-Files to turn in : Menu.java, Program.java, etc.
-
+Turn-in directory : *ex*05*/* \
+Files to turn in : Menu.java, Program.java, etc. \
 Allowed functions : All permissions from the previous exercise can be used, as well as try/catch
 
 - As a result, you should create a functioning application with a console
@@ -206,8 +171,6 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 - The application shall support two launch modes production (standard mode) and dev (where transfer information for a specific user can be removed by user ID, and a function that checks the validity of all transfers can be run).
 - If an exception is thrown, a message containing information about the error shall appear, and user shall be provided an ability to enter valid data.
 - The application operation scenario is as follows (the program must carefully follow this output example):
-
-
 
 |$ java Program --profile=dev||
 | - | :- |
@@ -223,10 +186,8 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 |Enter a user name and a balance||
 |-> Jonh 777||
 
-13
-Module 15 – Piscine Java OOP/Collections![ref3]
 
-User with id = 1 is added ---------------------------------------------------------![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.010.png)![ref2]
+User with id = 1 is added ---------------------------------------------------------
 
 1. Add a user
 1. View user balances
@@ -326,7 +287,7 @@ Enter a user ID
 
 To Mike(id = 2) -100 with id = cc128842-2e5c-4cca-a44c-7829f53fc31f
 
-To Mike(id = 2) -150 with id = 1fc852e7-914f-4bfd-913d-0313aab1ed99![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.011.png)![ref2]
+To Mike(id = 2) -150 with id = 1fc852e7-914f-4bfd-913d-0313aab1ed99
 
 TO Mike(id = 2) -50 with id = ce183f49-5be9-4513-bd05-8bd82214eaba
 
