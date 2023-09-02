@@ -9,7 +9,7 @@ Rules of the Day
 - Connect the up-to-date version of JDBC driver.
 - To interact with the database, you may use classes and interfaces of the java.sql package (implementations of corresponding interfaces will be automatically included from the archive containing the driver).
 
-Exercise 00
+## Exercise 00
 Turn-in directory : *ex*00*/* \
 Files to turn in : Chat-folder \
 Allowed functions : n/a
@@ -18,39 +18,39 @@ Throughout this week, we will be implementing Chat functionality. In this chat, 
 
 Key domain models which both SQL tables and Java classes must be implemented for are:
 
-User
+1. User
 
-  User ID
+ - User ID
 
-  Login
+ - Login
 
-  Password
+ - Password
 
-  List of created rooms
+ - List of created rooms
 
-  List of chatrooms where a user socializes
+ - List of chatrooms where a user socializes
 
-Chatroom
+2. Chatroom
 
-  Chatroom id
+ - Chatroom id
 
-  Chatroom name
+ - Chatroom name
 
-  Chatroom owner
+ - Chatroom owner
 
-  List of messages in a chatroom
+ - List of messages in a chatroom
 
-Message
+3. Message
 
-  Message id
+ - Message id
 
-  Message author
+ - Message author
 
-  Message room
+ - Message room
 
-  Message text
+ - Message text
 
-  Message date/time
+ - Message date/time
 
 Create schema.sql file where you will describe CREATE TABLE operations to create tables for the project. You should also create data.sql file with text data INSERTS (at least five in each table).
 
@@ -64,6 +64,9 @@ Let’s assume that Course entity has a one-to-many relationship with Lesson ent
 |private List<Lesson> lessons;// there are numerous lessons in the course|
 |...|
 |}|
+
+
+
 |class Lesson {|
 |private Long id;|
 |private Course course; // the lesson contains a course it is linked to|
@@ -79,27 +82,27 @@ Additional requirements:
 
 Exercise project structure:
 
-Chat
+    Chat
+    
+      src
+    
+        main
+    
+          java
+    
+            edu.school21.chat
+    
+              models - domain knowledge models resources
+            
+          resources
+    
+              schema.sql
+    
+              data.sql
+    
+    pom.xml
 
-  src
-
-    main
-
-      java
-
-        edu.school21.chat
-
-          models - domain knowledge models resources
-        
-      resources
-
-          schema.sql
-
-          data.sql
-
-pom.xml
-
-Exercise 01 
+## Exercise 01 
 Turn-in directory : *ex*01*/*
 Files to turn in : Chat-folder
 Allowed functions : n/a
@@ -130,63 +133,52 @@ The implemented code must be tested in Program.java class. Example of the progra
 
 
 
-|$ java Program|
-| - |
-|Enter a message ID|
-|-> 5|
-|Message : {|
-|id=5,|
-|author={id=7,login="user",password="user",createdRooms=null,rooms=null},|
+`$ java Program`
 
-
-room={id=8,name="room",creator=null,messages=null}, text="message",
-
-dateTime=01/01/01 15:69
-
+Enter a message ID \
+-> 5 \
+Message : { \
+id=5, \
+author={id=7,login="user",password="user",createdRooms=null,rooms=null}, \
+room={id=8,name="room",creator=null,messages=null}, text="message", \
+dateTime=01/01/01 15:69 \
 }
 
 Exercise project structure:
 
-Chat
-
-src
-
-main
-
-java
-
-edu.school21.chat
-
-models - domain knowledge models repositories - repositories
-
-app
-
-Program.java
-
-resources
-
-schema.sql
-
-data.sql
-
-pom.xml
+    Chat
+    
+      src
+    
+        main
+    
+          java
+    
+            edu.school21.chat
+    
+              models - domain knowledge models 
+              
+              repositories - repositories
+    
+              app
+    
+                Program.java
+    
+          resources
+    
+            schema.sql
+    
+            data.sql
+    
+    pom.xml
 
 - MessagesRepositoryJdbcImpl shall accept DataSource interface of java.sql package as a constructor parameter.
 - For DataSource implementation, use HikariCP library a pool of connections to the database which considerably expedite the use of storage.
 
-11
-Chapter VI
-
-Exercise 02 : Create/Save![ref2]
-
-
-
-|![ref4]|Exercise 02|
-| - | - |
-|Create/Save||
-|Turn-in directory : *ex*02*/*||
-|Files to turn in : Chat-folder||
-|Allowed functions : n/a||
+Exercise 02
+Turn-in directory : *ex*02*/* \
+Files to turn in : Chat-folder \
+Allowed functions : n/a \
 
 Now you need to implement save(Message message) method for MessagesRepository.
 
@@ -214,24 +206,14 @@ Example of save method use:
 - If author and room have no ID existing in the database assigned, or these IDs are null, throw Runtimeexception NotSavedSubEntityException (implement this exception on your own).
 - Test the implemented code in Program.java class.
 
-
-Chapter VII
-
-Exercise 03 : Update![ref2]
-
-
-
-|![ref4]|Exercise 03|
-| - | - |
-|Update||
-|Turn-in directory : *ex*03*/*||
-|Files to turn in : Chat-folder||
-|Allowed functions : n/a||
+Exercise 03
+Turn-in directory : *ex*03*/* \
+Files to turn in : Chat-folder \
+Allowed functions : n/a
 
 Now we need to implement update method in MessageRepository. This method shall fully update an existing entity in the database. If a new value of a field in an entity being updated is null, this value shall be saved in the database.
 
 An example of update method use:
-
 
 
 |public static void main(String args[]) {|
@@ -249,19 +231,10 @@ An example of update method use:
 
 - In this example, the value of the column storing the message text will be altered, whereas message time will be null.
 
-13
-Chapter VIII
-
-Exercise 04 : Find All![ref2]
-
-
-
-|![ref4]|Exercise 04|
-| - | - |
-|Find All||
-|Turn-in directory : *ex*04*/*||
-|Files to turn in : Chat-folder||
-|Allowed functions : n/a||
+Exercise 04
+Turn-in directory : *ex*04*/* \
+Files to turn in : Chat-folder \
+Allowed functions : n/a
 
 Now you need to implement UsersRepository interface and UsersRepositoryJdbcImpl class using a SINGLE List<User> findAll(int page, int size) method.
 
@@ -271,8 +244,9 @@ The most complicated situation in converting relational links into object-orient
 
 Each subentity of the user MUST NOT include its dependencies, i.e. list of messages inside each room must be empty.
 
-The implemented method operation should be demonstrated in Program.java. Notes
+The implemented method operation should be demonstrated in Program.java. 
 
+### Notes
 - findAll(int page, int size) method shall be implemented by a SINGLE database query. It is not allowed to use additional SQL queries to retrieve information for each user.
 - We recommend using CTE PostgreSQL.
 
