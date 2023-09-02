@@ -1,67 +1,10 @@
-OOP/Collections
+# Day 2
+
+##OOP/Collections
 
 Summary: Today you will learn how to model the operation of various collections correctly, and create a full-scale money transfer application
 
-<a name="_page2_x72.00_y72.00"></a>Chapter iii
-
-Contents![ref2]
-
-[I Foreword](#_page2_x72.00_y72.00) 2 [II Instructions](#_page3_x72.00_y72.00) 3 [III Introduction to exercises](#_page5_x72.00_y74.49) 5 [IV](#_page6_x72.00_y74.49) [Exercise](#_page6_x72.00_y74.49) [00](#_page6_x72.00_y74.49) [:](#_page6_x72.00_y74.49) [Models](#_page6_x72.00_y74.49) 6
-
-[V](#_page8_x72.00_y74.49) [Exercise](#_page8_x72.00_y74.49) [01](#_page8_x72.00_y74.49) [:](#_page8_x72.00_y74.49) [ID](#_page8_x72.00_y74.49) [Generator](#_page8_x72.00_y74.49) 8
-
-[VI](#_page9_x72.00_y74.49) [Exercise](#_page9_x72.00_y74.49) [02](#_page9_x72.00_y74.49) [:](#_page9_x72.00_y74.49) [List](#_page9_x72.00_y74.49) [of](#_page9_x72.00_y74.49) [Users](#_page9_x72.00_y74.49) 9
-
-[VII](#_page10_x72.00_y74.49) [Exercise](#_page10_x72.00_y74.49) [03](#_page10_x72.00_y74.49) [:](#_page10_x72.00_y74.49) [List](#_page10_x72.00_y74.49) [of](#_page10_x72.00_y74.49) [transactions](#_page10_x72.00_y74.49) 10
-
-[VIII](#_page11_x72.00_y74.49) [Exercise](#_page11_x72.00_y74.49) [04](#_page11_x72.00_y74.49) [:](#_page11_x72.00_y74.49) [Business](#_page11_x72.00_y74.49) [Logic](#_page11_x72.00_y74.49) 11
-
-[IX](#_page12_x72.00_y74.49) [Exercise](#_page12_x72.00_y74.49) [05](#_page12_x72.00_y74.49) [:](#_page12_x72.00_y74.49) [Menu](#_page12_x72.00_y74.49) 12
-
-Foreword![ref2]
-
-Domain modeling is the most challenging task in software development. Solving this task correctly ensures flexibility of the implemented system.
-
-Programming languages supporting the object-oriented programming (OOP) concept enable to effectively divide business processes into logical components called classes. Each class must comply with SOLID principles:
-
-- Single responsibility principle: a class contains a single logically associated func- tionality (a coffee machine cannot clean and monitor changes in the call stack; its purpose is to make coffee).
-- Open-closed principle: each class can offer an option to extend its functionality. However, such extension should not provide for modifying source class code.
-- Liskov substitution principle: derived classes only ADD to the functionality of a source class without modifying it.
-- Interface segregation principle: there are many points (interfaces) that describe a logically associated behavior. There is no general-purpose interface.
-- Dependency inversion principle: a system must not depend on specific entities; all dependencies are based on abstractions (interfaces).
-
-Today, you should focus on the first SOLID principle.
-
-![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.003.jpeg)
-
-Instructions![ref2]
-
-- Use this page as the only reference. Do not listen to any rumors and speculations about how to prepare your solution.
-- Now there is only one Java version for you, 1.8. Make sure that compiler and interpreter of this version are installed on your machine.
-- You can use IDE to write and debug the source code.
-- The code is read more often than written. Read carefully the do[cument where](https://docs.google.com/document/d/17ts-C3BEqqzmVf5W4vc82rliYTgRmf_oDVB5JZDoE1E/edit?usp=sharing) code formatting rules are given. When performing each task, make sure you follow the generally accepted [Oracle standards](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
-- Comments are not allowed in the source code of your solution. They make it difficult to read the code.
-- Pay attention to the permissions of your files and directories.
-- To be assessed, your solution must be in your GIT repository.
-- Your solutions will be evaluated by your piscine mates.
-- You should not leave in your directory any other file than those explicitly specified by the exercise instructions. It is recommended that you modify your .gitignore to avoid accidents.
-- When you need to get precise output in your programs, it is forbidden to display a precalculated output instead of performing the exercise correctly.
-- Have a question? Ask your neighbor on the right. Otherwise, try with your neighbor on the left.
-- Your reference manual: mates / Internet / Google. And one more thing. There’s an answer to any question you may have on Stackoverflow. Learn how to ask questions correctly.
-- Read the examples carefully. They may require things that are not otherwise spec- ified in the subject.
-- Use "System.out" for output
-
-3
-
-Module 01 – Piscine Java OOP/Collections![ref2]![ref3]
-
-- And may the Force be with you!
-- Never leave that till tomorrow which you can do today ;)
-
-4
-<a name="_page5_x72.00_y74.49"></a>Chapter III
-
-Introduction to exercises![ref2]
+Introduction to exercises
 
 An internal money transfer system is an integral part of many corporate applications. Your today’s task is to automate a business process associated with transfers of certain amounts between participants of our system.
 
@@ -79,12 +22,8 @@ A transfer entry may obviously be lost in such a complex system it may not be re
 
 Below is a set of exercises you can do one by one to solve the task.
 
-5
-<a name="_page6_x72.00_y74.49"></a>Chapter IV
 
-Exercise 00 : Models![ref2]
-
-Exercise 00 ![](Aspose.Words.636e836c-e25b-46d5-9e85-b5e47e0f6986.005.png)![ref4]Models
+## Exercise 00 
 
 Turn-in directory : *ex*00*/*
 
@@ -112,24 +51,12 @@ Transaction class describes a money transfer between two users. Here, a unique i
 - Transfer category (debits, credits)
 - Transfer amount
 
-6
-
-Module 01 – Piscine Java OOP/Collections![ref2]![ref3]
-
 It is necessary to check the initial user balance (it cannot be negative), as well as the balance for the outgoing (negative amounts only) and incoming (positive amounts only) transactions (use of get/set methods).
 
 An example of use of such classes shall be contained in Program file(creation, initialization, printing object content on a console). All data for class fields must be hardcoded in Program.
 
-7
-<a name="_page8_x72.00_y74.49"></a>Chapter V
+## Exercise 01
 
-Exercise 01 : ID Generator![ref2]
-
-
-
-|![ref4]|Exercise 01|
-| - | - |
-|ID Generator||
 |Turn-in directory : *ex*01*/*||
 |Files to turn in : UserIdsGenerator.java, User.java, Program.java||
 |Allowed functions : All permissions from the previous exercise can be used||
