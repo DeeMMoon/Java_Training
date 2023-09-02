@@ -15,7 +15,7 @@ P.S. Some tasks require a non-trivial approach because of the above-mentioned li
 
 
 |Turn-in directory : *ex*00*/*|
-|Files to turn in : Program.java
+|Files to turn in : Program.java|
 |Allowed functions : \
 Input/Output : System.out \
 Types : Primitive types|
