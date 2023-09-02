@@ -216,18 +216,17 @@ Now we need to implement update method in MessageRepository. This method shall f
 An example of update method use:
 
 
-|public static void main(String args[]) {|
-| - |
-|MessagesRepository messagesRepository = new MessagesRepositoryJdbcImpl(...);|
-|Optional<Message> messageOptional = messagesRepository.findById(11);|
-|if (messageOptinal.isPresent()) {|
-|Message message = messageOptional.get();|
-|message.setText("Bye");|
-|message.setDateTime(null);|
-|messagesRepository.update(message);|
-|}|
-|...|
-|}|
+    public static void main(String args[]) {
+    MessagesRepository messagesRepository = new MessagesRepositoryJdbcImpl(...);
+    Optional<Message> messageOptional = messagesRepository.findById(11);
+    if (messageOptinal.isPresent()) {
+    Message message = messageOptional.get();
+    message.setText("Bye");
+    message.setDateTime(null);
+    messagesRepository.update(message);
+    }
+    ...
+    }
 
 - In this example, the value of the column storing the message text will be altered, whereas message time will be null.
 
@@ -249,9 +248,4 @@ The implemented method operation should be demonstrated in Program.java.
 ### Notes
 - findAll(int page, int size) method shall be implemented by a SINGLE database query. It is not allowed to use additional SQL queries to retrieve information for each user.
 - We recommend using CTE PostgreSQL.
-
-
-
-Module 05 – Piscine Java SQL/JDBC![ref2]![ref3]
-
 - UsersRepositoryJdbcImpl shall accept DataSource interface of java.sql package as a constructor parameter.
