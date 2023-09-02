@@ -95,24 +95,14 @@ Example of program operation:
 |-> 42|
 |Count of coffee-request - 2|
 
-Chapter VII
 
-Exercise 03 : A Little Bit of Statistics![ref2]
+## Exercise 03
 
-Exercise 03![ref6]![ref5]
-
-A Little Bit of Statistics
-
-Turn-in directory : *ex*03*/*
-
-Files to turn in : Program.java
-
-Allowed functions :
-
-Input/Output : System.out, System.err, Scanner(System.in)
-
-Types : Primitive types, String
-
+Turn-in directory : *ex*03*/* \
+Files to turn in : Program.java \
+Allowed functions : \
+Input/Output : System.out, System.err, Scanner(System.in) \
+Types : Primitive types, String \
 Operators : Standard operations of primitive types, conditions, loops Methods : String::equals
 
 When developing corporate systems, you often need to collect different kinds of statistics. And the customer always wants such analytics to be illustrative. Who needs cold, dry figures?
@@ -127,17 +117,12 @@ And we keep assuming that 42 is the input data limit. The exact guaranteed numbe
 
 However, the order of weekly data input is not guaranteed, so Week 1’s data can be entered after Week 2’s data. If data input order is wrong, IllegalArgument message shall be displayed, and the program shall be shut down with -1 code.
 
-
-<a name="_page12_x72.00_y74.49"></a>Chapter VIII
-
-Note:![ref2]
+### Note
 
 - There are many options for storing information, and arrays are just one of them. Apply another method for storing data about student tests without the use of arrays.
 - String concatenation often results in unexpected program behavior. If there are many iterations of a concatenation operation in a cycle for a single variable, an application may slow down significantly. That is why we should not use string concatenation inside a loop to generate a result.
 
 Example of program operation:
-
-
 
 |$ java Program|
 | - |
@@ -155,25 +140,16 @@ Example of program operation:
 |Week 3 ===>|
 |Week 4 ====>|
 
-Exercise 04 : A Bit More of Statistics![ref2]
+## Exercise 04 
 
-Exercise 04![ref6]![ref5]
+Turn-in directory : *ex*04*/* \
+Files to turn in : Program.Java \
+Allowed functions : \
+Input/Output : System.out, System.err, Scanner(System.in) \
+Types : Primitive types, String, arrays \
+Operators : Standard operations of primitive types, conditions, loops Methods : String::equals, String::toCharArray, String::length \
 
-A Bit More of Statistics
-
-Turn-in directory : *ex*04*/*
-
-Files to turn in : Program.Java
-
-Allowed functions :
-
-Input/Output : System.out, System.err, Scanner(System.in)
-
-Types : Primitive types, String, arrays
-
-Operators : Standard operations of primitive types, conditions, loops Methods : String::equals, String::toCharArray, String::length
-
-Did you know that you can use frequency analysis to decipher poorly encrypted texts? See https://en.wikipedia.org/wiki/Frequency\_analysis
+Did you know that you can use frequency analysis to decipher poorly encrypted texts? See https://en.wikipedia.org/wiki/Frequency\_analysis 
 
 Feel like a hacker and implement a program for counting a character occurrences in a
 
@@ -187,10 +163,8 @@ We like visual clarity. This is why the program will display the results in a hi
 - It is assumed that each input character can be contained in a char variable (Unicode BMP; for example, the code of letter "S" is 0053, maximum code value is 65535).
 - The maximum number of character occurrences is 999.
 
-11
-<a name="_page14_x72.00_y74.49"></a>Chapter IX
-
-Note: this problem must be solved without multiple iterations over the source text (sorting![ref2] and removing repetitions), because these methods will significantly slow down the application. Use other information processing methods.
+### Note: 
+  this problem must be solved without multiple iterations over the source text (sorting![ref2] and removing repetitions), because these methods will significantly slow down the application. Use other information processing methods.
 
 Example of program operation:
 
@@ -217,23 +191,14 @@ Example of program operation:
 |# # # # # # # # 2 2|
 |D A S W L K O T E R|
 
-Exercise 05 : Schedule![ref2]
+## Exercise 05
 
-Exercise 05![ref6]![ref5]
-
-Schedule
-
-Turn-in directory : *ex*05*/*
-
-Files to turn in : Program.Java
-
-Allowed functions :
-
-Input/Output : System.out, System.err, Scanner(System.in)
-
-Types : Primitive types, String, arrays
-
-Operators : Standard operations of primitive types, conditions, loops Methods : String::equals, String::toCharArray, String::length
+Turn-in directory : *ex*05*/* \
+Files to turn in : Program.Java \
+Allowed functions : \
+Input/Output : System.out, System.err, Scanner(System.in) \
+Types : Primitive types, String, arrays \
+Operators : Standard operations of primitive types, conditions, loops Methods : String::equals, String::toCharArray, String::length \
 
 You’ve just become a great hacker, but your customer comes back to you with another task. This time, they need to be able to maintain a class timetable in their educational institution. Customer opens a school in September 2020. So, you need to implement the MVP version of the project for this month only.
 
@@ -248,6 +213,6 @@ Therefore, application’s life cycle is as follows:
 - Creating a list of students
 - Populating a timetable each class (time, day of week) is entered in a separate row
 - Attendance recording
-- Displaying the timetable in tabular form with attendance statuses.![ref2]
+- Displaying the timetable in tabular form with attendance statuses.
 
 Each application operation stage is divided by "." (period). Absolute correctness of data is guaranteed, except for sequential ordering of classes when populating the timetable.
