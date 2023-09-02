@@ -22,7 +22,11 @@ Now your task is to implement functionality that prints a two-colored image in t
 
 An example of a black-and-white BMP image (this format is mandatory for the solution). Image size is 16\*16 pixels.
 
+![it](./images/it.png)
+
 You can find this image in the project page.
+
+![it2](./images/it2.png)
 
 Your application shall accept input parameters corresponding to characters that should be displayed in place of white and black pixels. Another main function startup parameter is the full path to the image on your disk.
 
@@ -31,17 +35,7 @@ If "." character is used for white color and "0" for black, the image in the con
 
 Application logic must be distributed between different packages and have the following structure:
 
-ImagesToChar - project folder
-| - src - source files
-|   |_ java - files of Java source code
-|     |_edu.school21.printer - a series of main packages
-|       |_ app - a package that contains classes for startup
-|       |_logic - a package that contains the logic for converting an image into an array of characters
-|
-|  - target - compiled .class files
-|     |_ edu.school21.printer ...
-|
-| - README.txt
+![Struct1](./images/Struct1.png)
 
 - README.txt file must contain instructions for compiling and starting your source code from the console (non-IDE). Instruction is written for the state where the console is opened in the project’s root folder.
 
@@ -54,29 +48,7 @@ Now you need to create a distribution package of the application a JAR archive. 
 
 The following project structure shall be adhered to:
 
-ImagesToChar - project folder![](Aspose.Words.050b22bb-ee64-47ee-96fe-4adb814b694b.008.png)
-
-src - source files
-
-java - files of Java source code
-
-...
-
-resources - a folder with resource files
-
-image.bmp - the displayed image
-
-manifest.txt - a file containing the description of the initial point for archive startup
-
-target - compiled .class files and archive
-
-edu.school21.printer ..
-
-resources
-
-images-to-chars-printer.jar
-
-README.txt
+![Struct2](./images/Struct2.png)
 
 - Archive and all compiled files shall be put in target folder during assembly (without a manual file transfer; you may apply cp command to the resource folder).
 - README.txt file should also contain information on the archive assembly and startup.
@@ -97,25 +69,7 @@ Now application startup parameters shall be processed with JCommander tools. The
 
 Required project structure:
 
-ImagesToChar - project folder
-
-lib - external library folder
-
-jcommander-\*.\*\*.jar JCDP-\*.\*.\*.jar/JCOLOR-\*.\*.\*.jar
-
-src - source files
-
-target - compiled .class files and archive
-
-edu.school21.printer
-
-com/beust ... - .class files of JCommander library com/diogonunes ... - .class files of JCDP library resources
-
-images-to-chars-printer.jar
-
-README.txt
-
-README.txt file shall also contain the information about including external libraries in the final assembly.
+![Struct3](./images/Struct3.png)
 
 Example of program operation:
 
