@@ -35,7 +35,7 @@ If "." character is used for white color and "0" for black, the image in the con
 
 Application logic must be distributed between different packages and have the following structure:
 
-![Struct1](./images/Struct1.png)
+![Struct1](./images/struct1.png)
 
 - README.txt file must contain instructions for compiling and starting your source code from the console (non-IDE). Instruction is written for the state where the console is opened in the project’s root folder.
 
@@ -48,7 +48,7 @@ Now you need to create a distribution package of the application a JAR archive. 
 
 The following project structure shall be adhered to:
 
-![Struct2](./images/Struct2.png)
+![Struct2](./images/struct2.png)
 
 - Archive and all compiled files shall be put in target folder during assembly (without a manual file transfer; you may apply cp command to the resource folder).
 - README.txt file should also contain information on the archive assembly and startup.
@@ -69,7 +69,7 @@ Now application startup parameters shall be processed with JCommander tools. The
 
 Required project structure:
 
-![Struct3](./images/Struct3.png)
+![Struct3](./images/struct3.png)
 
 Example of program operation:
 
