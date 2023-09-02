@@ -1,6 +1,6 @@
 # Day 2
 
-##OOP/Collections
+## OOP/Collections
 
 Summary: Today you will learn how to model the operation of various collections correctly, and create a full-scale money transfer application
 
@@ -26,13 +26,9 @@ Below is a set of exercises you can do one by one to solve the task.
 ## Exercise 00 
 
 Turn-in directory : *ex*00*/*
-
 Files to turn in : User.java, Transaction.java, Program.java
-
 Allowed functions :
-
 User classes can be employed, along with:
-
 Types (+ all methods of these types) : Integer, String, UUID, enumerations
 
 Your first task is to develop basic domain models namely, User and Transaction classes. It is quite likely for different users to have the same name in the system. This problem should be solved by adding a special field for a user’s unique ID. This ID can be any integer number. Specific ID creation logic is described in the next exercise.
@@ -57,9 +53,9 @@ An example of use of such classes shall be contained in Program file(creation, i
 
 ## Exercise 01
 
-|Turn-in directory : *ex*01*/*||
-|Files to turn in : UserIdsGenerator.java, User.java, Program.java||
-|Allowed functions : All permissions from the previous exercise can be used||
+Turn-in directory : *ex*01*/*
+Files to turn in : UserIdsGenerator.java, User.java, Program.java
+Allowed functions : All permissions from the previous exercise can be used
 
 Make sure that each user ID is unique. To do so, create UserIdsGenerator class. Behavior of the object of this class defines the functionality for generating user IDs. State-of-the-art database management systems support autoincrement principle where each new ID is the value of the previously generated ID +1.
 
