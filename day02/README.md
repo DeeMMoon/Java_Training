@@ -79,7 +79,7 @@ B = (3, 0, 1, 1, 0, 1)
 
 Thus, each of these vectors characterizes the text in terms of frequency of occurrence of words from our dictionary. Let’s determine the similarity between vectors using the following formula:
 
-
+![Formula](Formula.png)
 
 Thus, similarity value for these vectors is:
 
