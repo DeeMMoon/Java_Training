@@ -133,7 +133,7 @@ We need to create files\_urls.txt file (file name shall be explicitly specified 
 
 Example of program operation:
 
-`$ java Program.java --threadsCount=3 `
+`$ java Program.java --threadsCount=3 ` \
 Thread-1 start download file number 1 \
 Thread-2 start download file number 2 \
 Thread-1 finish download file number 1 \
