@@ -14,16 +14,12 @@ P.S. Some tasks require a non-trivial approach because of the above-mentioned li
 ## Exercise 00
 
 
-|Turn-in directory : *ex*00*/* \
+Turn-in directory : *ex*00*/* \
 Files to turn in : Program.java \
 Allowed functions : \
 Input/Output : System.out \
-Types : Primitive types|
-
-
-
-
-Operators : Standard operations of primitive types
+Types : Primitive types \
+Operators : Standard operations of primitive types \
 
 Java is a strictly typed programming language. Fundamental data types (boolean, character, integer, floating point number) are represented in Java by eight primitive types: boolean, char, byte, short, int, long, float, double.
 
@@ -33,7 +29,7 @@ Work with integer type.
 
 Example of the program operation for number 479598:
 
-$ java Program 42
+`$ java Program 42`
 
 Exercise 01 : Really Prime Number
 
