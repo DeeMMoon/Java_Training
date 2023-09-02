@@ -132,19 +132,19 @@ We need to create files\_urls.txt file (file name shall be explicitly specified 
   5. http://tldp.org/LDP/intro-linux/intro-linux.pdf
 
 Example of program operation:
-
-`$ java Program.java --threadsCount=3 \
-Thread-1 start download file number 1 \
-Thread-2 start download file number 2 \
-Thread-1 finish download file number 1 \
-Thread-1 start download file number 3 \
-Thread-3 start download file number 4 \
-Thread-1 finish download file number 3 \
-Thread-2 finish download file number 2 \
-Thread-1 start download file number 5 \
-Thread-3 finish download file number 4 \
-Thread-1 finish download file number 5`
-
+`
+`$ java Program.java --threadsCount=3` \
+`Thread-1 start download file number 1` \
+`Thread-2 start download file number 2` \
+`Thread-1 finish download file number 1` \
+`Thread-1 start download file number 3` \
+`Thread-3 start download file number 4` \
+`Thread-1 finish download file number 3` \
+`Thread-2 finish download file number 2` \
+`Thread-1 start download file number 5` \
+`Thread-3 finish download file number 4` \
+`Thread-1 finish download file number 5`
+`
 ### Notes:
 
 - Output created by the implemented program may differ from the illustration.
