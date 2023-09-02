@@ -171,13 +171,14 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 - If an exception is thrown, a message containing information about the error shall appear, and user shall be provided an ability to enter valid data.
 - The application operation scenario is as follows (the program must carefully follow this output example):
 
-|$ java Program --profile=dev||
+`$ java Program --profile=dev`
+
 | - | :- |
 |||
 |1\. Add a user||
 |2\. View user balances||
 |3\. Perform a transfer||
-|4\. View all transactions for a specific us|er|
+|4\. View all transactions for a specific user||
 |5\. DEV - remove a transfer by ID||
 |6\. DEV - check transfer validity||
 |7\. Finish execution||
