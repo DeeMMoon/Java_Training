@@ -173,29 +173,27 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 
 `$ java Program --profile=dev`
 
-| - | :- |
-|||
-|1\. Add a user||
-|2\. View user balances||
-|3\. Perform a transfer||
-|4\. View all transactions for a specific user||
-|5\. DEV - remove a transfer by ID||
-|6\. DEV - check transfer validity||
-|7\. Finish execution||
-|-> 1||
-|Enter a user name and a balance||
-|-> Jonh 777||
+1. Add a user
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
+-> 1
+Enter a user name and a balance
+-> Jonh 777
 
 
 User with id = 1 is added ---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 1
 
@@ -206,12 +204,12 @@ Enter a user name and a balance
 User with id = 2 is added ---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 3
 
@@ -222,12 +220,12 @@ Enter a sender ID, a recipient ID, and a transfer amount
 The transfer is completed ---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 3
 
@@ -238,12 +236,12 @@ Enter a sender ID, a recipient ID, and a transfer amount
 The transfer is completed ---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 3
 
@@ -254,12 +252,12 @@ Enter a sender ID, a recipient ID, and a transfer amount
 The transfer is completed ---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 2
 
@@ -272,12 +270,12 @@ Mike - 400
 \---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 4
 
@@ -294,12 +292,12 @@ TO Mike(id = 2) -50 with id = ce183f49-5be9-4513-bd05-8bd82214eaba
 \---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 5
 
@@ -312,12 +310,12 @@ Transfer To Mike(id = 2) 150 removed
 \---------------------------------------------------------
 
 1. Add a user
-1. View user balances
-1. Perform a transfer
-1. View all transactions for a specific user
-1. DEV - remove a transfer by ID
-1. DEV - check transfer validity
-1. Finish execution
+2. View user balances
+3. Perform a transfer
+4. View all transactions for a specific user
+5. DEV - remove a transfer by ID
+6. DEV - check transfer validity
+7. Finish execution
 
 -> 6
 
