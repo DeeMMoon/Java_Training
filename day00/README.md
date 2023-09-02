@@ -1,4 +1,4 @@
-#Day 1
+# Day 1
 
 Rules of the day
 
@@ -11,20 +11,13 @@ Rules of the day
 P.S. Some tasks require a non-trivial approach because of the above-mentioned limitations. These limitations will teach you how to find solutions for automating actual business processes.
 
 
-##Exercise 00
-Exercise 00![ref4]![ref5]
+## Exercise 00
 
-Sum of Digits
-
-Turn-in directory : *ex*00*/*
-
-Files to turn in : Program.java
-
-Allowed functions :
-
+| Turn-in directory : *ex*00*/* |
+| Files to turn in : Program.java
+| Allowed functions :
 Input/Output : System.out
-
-Types : Primitive types
+Types : Primitive types |
 
 Operators : Standard operations of primitive types
 
