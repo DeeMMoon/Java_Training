@@ -173,8 +173,8 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 
 `$ java Program --profile=dev`
 
-"
-1. Add a user
+
+`1. Add a user
 2. View user balances
 3. Perform a transfer
 4. View all transactions for a specific user
@@ -183,23 +183,23 @@ Allowed functions : All permissions from the previous exercise can be used, as w
 7. Finish execution \
 -> 1 \
 Enter a user name and a balance \
--> Jonh 777
+-> Jonh 777`
 
 
-User with id = 1 is added \
----------------------------------------------------------
+`User with id = 1 is added \
+---------------------------------------------------------`
 
-1. Add a user
+`1. Add a user
 2. View user balances
 3. Perform a transfer
 4. View all transactions for a specific user
 5. DEV - remove a transfer by ID
 6. DEV - check transfer validity
-7. Finish execution
+7. Finish execution`
 
--> 1
+`1`
 
-Enter a user name and a balance
+`Enter a user name and a balance`
 
 -> Mike 100
 
