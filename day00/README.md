@@ -14,11 +14,16 @@ P.S. Some tasks require a non-trivial approach because of the above-mentioned li
 ## Exercise 00
 
 
+
+
 |Turn-in directory : *ex*00*/*|
 |Files to turn in : Program.java|
-|Allowed functions : \
-Input/Output : System.out \
-Types : Primitive types|
+|Allowed functions :|
+|Input/Output : System.out|
+|Types : Primitive types|
+
+
+
 
 Operators : Standard operations of primitive types
 
