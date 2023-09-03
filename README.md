@@ -6,12 +6,13 @@
 
 ## Topics
 
- - Day 1 -
- - Day 2 -
- - Day 3 -
- - Day 4 -
- - Day 5 -
- - Day 6 -
- - Day 7 -
- - Day 9 -
- - Day 10 -
+ - Day 1 - Base construction
+ - Day 2 - OOP/Collection
+ - Day 3 - IO, Files
+ - Day 4 - Threads
+ - Day 5 - JAR
+ - Day 6 - SQL/JDBC
+ - Day 7 - JUnit/Mockito
+ - Day 8 - Reflection API
+ - Day 9 - Spring
+ - Day 10 - Sockets
