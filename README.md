@@ -10,6 +10,6 @@
  - Day 5 - JAR
  - Day 6 - SQL/JDBC
  - Day 7 - JUnit/Mockito
- - Day 8 - Reflection API
+ - Day 8 - Reflection API (missed)
  - Day 9 - Spring
  - Day 10 - Sockets
